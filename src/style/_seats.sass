@@ -1,0 +1,96 @@
+.seats-header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 25px
+
+
+
+.seats-field
+    margin-bottom: 16px
+
+    label
+        font-size: 14px
+        color: #FFFFFF
+        display: block
+        margin-bottom: 8px
+
+.seats-select
+    background: #252932
+    border-radius: 10px
+    padding: 12px 16px
+
+    select
+        background: none
+        border: none
+        color: white
+        font-size: 14px
+        width: 100%
+        cursor: pointer
+
+        option
+            background: #252932
+            color: white
+
+.DT-row
+    display: flex
+    gap: 16px
+    margin-bottom: 25px
+
+    .seats-field
+        flex: 1
+
+
+.seat-grid
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 10px
+    margin-bottom: 24px
+
+.seat-row
+    display: flex
+    gap: 8px
+
+.seat
+    width: 28px
+    height: 28px
+    border-radius: 10px
+    cursor: pointer
+
+    &.available
+        border: 1px solid #B2B5BB
+
+    &.reserved
+        background: #e05c5c
+
+    &.selected
+        background: #54A8E5
+
+.seat-dots
+    display: flex
+    justify-content: center
+    gap: 24px
+    margin: 16px 0 30px
+    font-size: 13px
+    color: #888
+
+    span
+        display: flex
+        align-items: center
+
+    .dot
+        display: inline-block
+        width: 10px
+        height: 10px
+        border-radius: 50%
+        margin-right: 6px
+
+        &.selected
+            background: #54A8E5
+
+        &.reserved
+            background: #e05c5c
+
+        &.available
+            border: 1px solid #B2B5BB
